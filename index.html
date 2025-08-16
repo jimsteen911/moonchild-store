@@ -1,114 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Moon Child Marketplace sells trending products including shirts, skin‑care, makeup, vitamins, dresses and more at fair prices.">
-  <title>Moon Child Marketplace &ndash; Trending Products 2025</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moon Child Marketplace sells trending products including shirts, skin-care, makeup, vitamins, jeans, dresses, phone accessories, kitchen appliances and more at fair prices with a modest markup.">
+    <title>Moon Child Marketplace – Trending Products 2025</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <h1>Moon Child Marketplace</h1>
-    <p>Your source for trending products in 2025</p>
-  </header>
+    <header class="site-header">
+        <h1>Moon Child Marketplace</h1>
+        <p>Your source for trending products in 2025</p>
+        <div class="cart-container">
+            <button id="cart-btn" onclick="toggleCart()">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
 
-  <main>
-    <section class="product-grid">
-      <!-- Product 1: Graphic T‑Shirt -->
-      <article class="product">
-        <img src="https://source.unsplash.com/480x320/?tshirt" alt="Graphic T‑Shirt">
-        <h2>Graphic T‑Shirt</h2>
-        <p>Comfortable cotton t‑shirt with trend‑inspired designs.</p>
-        <p class="price">$9.00</p>
-        <a href="mailto:orders@moonchildoftheearth.com?subject=Order%20Graphic%20T-Shirt&body=I%20would%20like%20to%20order%20a%20Graphic%20T‑Shirt.%20Please%20send%20payment%20instructions." class="btn">Buy&nbsp;Now</a>
-      </article>
+    <main>
+        <section class="product-grid">
+            <!-- Product 1: Graphic T‑Shirt -->
+            <article class="product">
+                <img src="https://source.unsplash.com/480x320/?tshirt" alt="Graphic T-Shirt">
+                <h2>Graphic T‑Shirt</h2>
+                <p>Comfortable cotton t-shirt with trend-inspired designs.</p>
+                <p class="price">$9.00</p>
+                <button class="add-to-cart" onclick="addToCart('Graphic T‑Shirt', 9.00)">Add to Cart</button>
+            </article>
 
-      <!-- Product 2: Skin Care Moisturizer -->
-      <article class="product">
-        <img src="https://source.unsplash.com/480x320/?skincare,cream" alt="Skin care moisturizer">
-        <h2>Skin Care Moisturizer</h2>
-        <p>Hydrating facial moisturizer formulated for all skin types.</p>
-        <p class="price">$10.00</p>
-        <a href="mailto:orders@moonchildoftheearth.com?subject=Order%20Skin%20Care%20Moisturizer&body=I%20would%20like%20to%20order%20the%20Skin%20Care%20Moisturizer.%20Please%20send%20payment%20instructions." class="btn">Buy&nbsp;Now</a>
-      </article>
+            <!-- Product 2: Skin Care Moisturizer -->
+            <article class="product">
+                <img src="https://source.unsplash.com/480x320/?skincare,cream" alt="Skin care moisturizer">
+                <h2>Skin Care Moisturizer</h2>
+                <p>Hydrating facial moisturizer formulated for all skin types.</p>
+                <p class="price">$10.00</p>
+                <button class="add-to-cart" onclick="addToCart('Skin Care Moisturizer', 10.00)">Add to Cart</button>
+            </article>
 
-      <!-- Product 3: Makeup Kit -->
-      <article class="product">
-        <img src="https://source.unsplash.com/480x320/?makeup,kit" alt="Makeup kit">
-        <h2>Makeup Kit</h2>
-        <p>Essential makeup set including lip stain, mascara and eye shadow.</p>
-        <p class="price">$12.00</p>
-        <a href="mailto:orders@moonchildoftheearth.com?subject=Order%20Makeup%20Kit&body=I%20would%20like%20to%20order%20the%20Makeup%20Kit.%20Please%20send%20payment%20instructions." class="btn">Buy&nbsp;Now</a>
-      </article>
+            <!-- Product 3: Makeup Kit -->
+            <article class="product">
+                <img src="https://source.unsplash.com/480x320/?makeup,kit" alt="Makeup kit">
+                <h2>Makeup Kit</h2>
+                <p>Essential makeup set including lip stain, mascara and eye shadow.</p>
+                <p class="price">$12.00</p>
+                <button class="add-to-cart" onclick="addToCart('Makeup Kit', 12.00)">Add to Cart</button>
+            </article>
 
-      <!-- Product 4: Herbal Supplements -->
-      <article class="product">
-        <img src="https://source.unsplash.com/480x320/?herbal,supplements" alt="Herbal supplements">
-        <h2>Herbal Supplements</h2>
-        <p>Natural multivitamin and herbal supplement for daily wellness.</p>
-        <p class="price">$10.00</p>
-        <a href="mailto:orders@moonchildoftheearth.com?subject=Order%20Herbal%20Supplements&body=I%20would%20like%20to%20order%20the%20Herbal%20Supplements.%20Please%20send%20payment%20instructions." class="btn">Buy&nbsp;Now</a>
-      </article>
+            <!-- Product 4: Herbal Supplements -->
+            <article class="product">
+                <img src="https://source.unsplash.com/480x320/?herbal,supplements" alt="Herbal supplements">
+                <h2>Herbal Supplements</h2>
+                <p>Natural multivitamin and herbal supplement for daily wellness.</p>
+                <p class="price">$10.00</p>
+                <button class="add-to-cart" onclick="addToCart('Herbal Supplements', 10.00)">Add to Cart</button>
+            </article>
 
-      <!-- Product 5: Jeans -->
-      <article class="product">
-        <img src="https://source.unsplash.com/480x320/?jeans,denim" alt="Jeans">
-        <h2>Classic Denim Jeans</h2>
-        <p>High‑quality denim jeans with a comfortable fit.</p>
-        <p class="price">$15.00</p>
-        <a href="mailto:orders@moonchildoftheearth.com?subject=Order%20Denim%20Jeans&body=I%20would%20like%20to%20order%20the%20Denim%20Jeans.%20Please%20send%20payment%20instructions." class="btn">Buy&nbsp;Now</a>
-      </article>
+            <!-- Product 5: Classic Denim Jeans -->
+            <article class="product">
+                <img src="https://source.unsplash.com/480x320/?jeans,denim" alt="Jeans">
+                <h2>Classic Denim Jeans</h2>
+                <p>High-quality denim jeans with a comfortable fit.</p>
+                <p class="price">$20.00</p>
+                <button class="add-to-cart" onclick="addToCart('Classic Denim Jeans', 20.00)">Add to Cart</button>
+            </article>
 
-      <!-- Product 6: Dresses -->
-      <article class="product">
-        <img src="https://source.unsplash.com/480x320/?dress,fashion" alt="Dress">
-        <h2>Elegant Dress</h2>
-        <p>Stylish dress suitable for parties and special events.</p>
-        <p class="price">$20.00</p>
-        <a href="mailto:orders@moonchildoftheearth.com?subject=Order%20Elegant%20Dress&body=I%20would%20like%20to%20order%20the%20Elegant%20Dress.%20Please%20send%20payment%20instructions." class="btn">Buy&nbsp;Now</a>
-      </article>
+            <!-- Product 6: Elegant Dress -->
+            <article class="product">
+                <img src="https://source.unsplash.com/480x320/?dress,elegant" alt="Elegant dress">
+                <h2>Elegant Dress</h2>
+                <p>Stylish and elegant dress perfect for any special occasion.</p>
+                <p class="price">$25.00</p>
+                <button class="add-to-cart" onclick="addToCart('Elegant Dress', 25.00)">Add to Cart</button>
+            </article>
 
-      <!-- Product 7: Phone Accessories -->
-      <article class="product">
-        <img src="https://source.unsplash.com/480x320/?phone,case" alt="Phone accessories">
-        <h2>Phone Case &amp; Screen Protector</h2>
-        <p>Protective phone case and tempered glass screen protector.</p>
-        <p class="price">$5.00</p>
-        <a href="mailto:orders@moonchildoftheearth.com?subject=Order%20Phone%20Case%20and%20Screen%20Protector&body=I%20would%20like%20to%20order%20the%20Phone%20Case%20and%20Screen%20Protector.%20Please%20send%20payment%20instructions." class="btn">Buy&nbsp;Now</a>
-      </article>
+            <!-- Product 7: Phone Case & Screen Protector -->
+            <article class="product">
+                <img src="https://source.unsplash.com/480x320/?phone,accessories" alt="Phone accessories">
+                <h2>Phone Case & Screen Protector</h2>
+                <p>Durable phone case paired with a tempered-glass screen protector.</p>
+                <p class="price">$15.00</p>
+                <button class="add-to-cart" onclick="addToCart('Phone Case & Screen Protector', 15.00)">Add to Cart</button>
+            </article>
 
-      <!-- Product 8: Air Fryer -->
-      <article class="product">
-        <img src="https://source.unsplash.com/480x320/?air-fryer,kitchen" alt="Air fryer">
-        <h2>Compact Air Fryer</h2>
-        <p>Energy‑efficient air fryer for healthier cooking.</p>
-        <p class="price">$45.00</p>
-        <a href="mailto:orders@moonchildoftheearth.com?subject=Order%20Air%20Fryer&body=I%20would%20like%20to%20order%20the%20Air%20Fryer.%20Please%20send%20payment%20instructions." class="btn">Buy&nbsp;Now</a>
-      </article>
+            <!-- Product 8: Compact Air Fryer -->
+            <article class="product">
+                <img src="https://source.unsplash.com/480x320/?airfryer,kitchen" alt="Compact air fryer">
+                <h2>Compact Air Fryer</h2>
+                <p>Space-saving air fryer ideal for quick, healthy meals.</p>
+                <p class="price">$40.00</p>
+                <button class="add-to-cart" onclick="addToCart('Compact Air Fryer', 40.00)">Add to Cart</button>
+            </article>
 
-      <!-- Product 9: Painting Kit -->
-      <article class="product">
-        <img src="https://source.unsplash.com/480x320/?painting,art" alt="Painting kit">
-        <h2>Painting Kit</h2>
-        <p>Complete painting kit with brushes, paints and canvases.</p>
-        <p class="price">$12.00</p>
-        <a href="mailto:orders@moonchildoftheearth.com?subject=Order%20Painting%20Kit&body=I%20would%20like%20to%20order%20the%20Painting%20Kit.%20Please%20send%20payment%20instructions." class="btn">Buy&nbsp;Now</a>
-      </article>
+            <!-- Product 9: Painting Kit -->
+            <article class="product">
+                <img src="https://source.unsplash.com/480x320/?painting,kit" alt="Painting kit">
+                <h2>Painting Kit</h2>
+                <p>All-in-one painting kit with canvas, brushes and acrylic paints.</p>
+                <p class="price">$18.00</p>
+                <button class="add-to-cart" onclick="addToCart('Painting Kit', 18.00)">Add to Cart</button>
+            </article>
 
-      <!-- Product 10: Bedding Set -->
-      <article class="product">
-        <img src="https://source.unsplash.com/480x320/?bedding,bed" alt="Bedding set">
-        <h2>Bedding Set</h2>
-        <p>Soft and durable bedding set with fitted sheet, flat sheet and pillowcases.</p>
-        <p class="price">$22.00</p>
-        <a href="mailto:orders@moonchildoftheearth.com?subject=Order%20Bedding%20Set&body=I%20would%20like%20to%20order%20the%20Bedding%20Set.%20Please%20send%20payment%20instructions." class="btn">Buy&nbsp;Now</a>
-      </article>
-    </section>
-  </main>
+            <!-- Product 10: Bedding Set -->
+            <article class="product">
+                <img src="https://source.unsplash.com/480x320/?bedding,set" alt="Bedding set">
+                <h2>Bedding Set</h2>
+                <p>Soft and cozy bedding set including duvet cover and pillowcases.</p>
+                <p class="price">$35.00</p>
+                <button class="add-to-cart" onclick="addToCart('Bedding Set', 35.00)">Add to Cart</button>
+            </article>
+        </section>
+    </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Moon Child Marketplace. All rights reserved.</p>
-  </footer>
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-total"></p>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+            <button class="close-btn" onclick="toggleCart()">Close</button>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Moon Child Marketplace. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
